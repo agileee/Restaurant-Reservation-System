@@ -1,4 +1,4 @@
-# Group Project
+# Solo Project
 
 The Restaurant Reservation System is a web-based application developed using Node.js for the backend, HTML, CSS, Javascripts for the frontend, and MySQL for database management. 
 
