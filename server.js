@@ -18,8 +18,8 @@ app.use(express.static(path.join(__dirname, 'frontend')));
 // MySQL connection
 const db = mysql.createConnection({
   host: 'localhost',
-  user: 'root',
-  password: 'akhil118024391akhilroot', // ⚠ Secure this in production
+  user: 'your_username',
+  password: 'your_password', 
   database: 'golden_fork'
 });
 
