@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menu | Golden Fork</title>
+<link rel="stylesheet" href="css/style.css">
+<style>
+    .menu-hero { background-color: #e5b245; color: #955301; text-align: center; padding: 180px 20px 80px; }
+    .menu-hero .logo-image { max-width: 300px; height: 350px; margin-top: -120px; margin-bottom: 5px; }
+    .menu-hero h1 { font-size: 3.5em; margin-bottom: 20px; color: #955301; }
+    .menu-main { background-color: #fff7e6; padding: 60px 20px; }
+    .menu-container { max-width: 1200px; margin: 0 auto; }
+    .menu-section { margin-bottom: 60px; }
+    .menu-section h2 { font-size: 2.5em; color: #955301; margin-bottom: 30px; text-align: center; position: relative; }
+    .menu-section h2::after { content: ""; position: absolute; bottom: -15px; left: 50%; transform: translateX(-50%); width: 100px; height: 3px; background-color: #f9a825; }
+    .menu-items { display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; }
+    .menu-item { background: white; width: 280px; border-radius: 10px; box-shadow: 0 6px 15px rgba(0,0,0,0.1); overflow: hidden; transition: transform 0.3s; }
+    .menu-item:hover { transform: translateY(-5px); }
+    .menu-item img { width: 100%; height: 200px; object-fit: cover; }
+    .menu-item-info { padding: 20px; text-align: center; }
+    .menu-item-info h3 { font-size: 1.8em; color: #f9a825; margin-bottom: 10px; }
+    .menu-item-info p { font-size: 1em; color: #707070; }
+    footer { background-color: #e5b245; color: white; text-align: center; padding: 15px 0; }
+</style>
+</head>
+<body>
+<header>
+<nav>
+    <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="menu.html">MENU</a></li>
+        <li><a href="login_signup.html">LOGIN / SIGN UP</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+</nav>
+</header>
+
+<section class="menu-hero">
+    <div class="logo">
+        <img src="images/logo.jpg" alt="logo" class="logo-image">
+    </div>
+    <h1>~Our Menu~</h1>
+    <p>Explore our carefully crafted menu of delicious dishes and beverages.</p>
+</section>
+
+<section class="menu-main">
+    <div class="menu-container">
+
+        <!-- Starters -->
+        <div class="menu-section">
+            <h2>Starters</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="images/bruschetta.jpg" alt="Bruschetta">
+                    <div class="menu-item-info">
+                        <h3>Bruschetta</h3>
+                        <p>Grilled bread with garlic, fresh tomatoes, basil, and olive oil.</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/salad.jpg" alt="Garden Salad">
+                    <div class="menu-item-info">
+                        <h3>Garden Salad</h3>
+                        <p>Fresh greens with seasonal vegetables and a light vinaigrette.</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/soup.jpg" alt="Soup of the Day">
+                    <div class="menu-item-info">
+                        <h3>Soup of the Day</h3>
+                        <p>Warm and comforting, prepared fresh daily with seasonal ingredients.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Courses -->
+        <div class="menu-section">
+            <h2>Main Courses</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="images/beef-wellington.jpg" alt="Beef Wellington">
+                    <div class="menu-item-info">
+                        <h3>Beef Wellington</h3>
+                        <p>Beef fillet wrapped in puff pastry with mushroom duxelles.</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/pasta.jpg" alt="Homemade Pasta">
+                    <div class="menu-item-info">
+                        <h3>Homemade Pasta</h3>
+                        <p>Fresh pasta with your choice of sauce: Marinara, Alfredo, or Pesto.</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/grilled-salmon.jpg" alt="Grilled Salmon">
+                    <div class="menu-item-info">
+                        <h3>Grilled Salmon</h3>
+                        <p>Perfectly grilled salmon fillet served with seasonal vegetables.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Desserts -->
+        <div class="menu-section">
+            <h2>Desserts</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="images/tiramisu.jpg" alt="Tiramisu">
+                    <div class="menu-item-info">
+                        <h3>Tiramisu</h3>
+                        <p>Classic Italian dessert with coffee-soaked ladyfingers and mascarpone.</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/cheesecake.jpg" alt="Cheesecake">
+                    <div class="menu-item-info">
+                        <h3>New York Cheesecake</h3>
+                        <p>Rich and creamy cheesecake served with fresh berries.</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/chocolate-mousse.jpg" alt="Chocolate Mousse">
+                    <div class="menu-item-info">
+                        <h3>Chocolate Mousse</h3>
+                        <p>Velvety chocolate mousse with a hint of espresso and whipped cream.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Beverages -->
+        <div class="menu-section">
+            <h2>Beverages</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="images/iced-latte.jpg" alt="Iced Latte">
+                    <div class="menu-item-info">
+                        <h3>Iced Latte</h3>
+                        <p>Freshly brewed iced latte with your choice of milk or cream.</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/wine.jpg" alt="Wine">
+                    <div class="menu-item-info">
+                        <h3>Fine Wine Selection</h3>
+                        <p>Curated selection of red and white wines from around the world.</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/juice.jpg" alt="Fresh Juices">
+                    <div class="menu-item-info">
+                        <h3>Fresh Juices</h3>
+                        <p>Seasonal fresh juices with natural flavors to refresh and energize.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 Golden Fork Restaurant. All Rights Reserved.</p>
+</footer>
+</body>
+</html>
