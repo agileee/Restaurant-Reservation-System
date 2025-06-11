@@ -24,8 +24,11 @@ and server.js file should be ther right under root directory
 
 eg:
 project-root/
+
 ├── server.js
+
 └── public/
+
     └── index.html
 
 Type these code in command line/terminal.
