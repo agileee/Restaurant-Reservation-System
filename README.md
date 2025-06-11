@@ -28,7 +28,6 @@ project-root/
 ├── server.js
 
 └── public/
-
     └── index.html
 
 Type these code in command line/terminal.
