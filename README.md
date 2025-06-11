@@ -5,6 +5,7 @@ The Restaurant Reservation System is a web-based application developed using Nod
 ## Features
 
  ● Login/Registration System using secure password handling with hashing
+ 
  ● Each user has a unique profile.
   
  ● Displays Restaurants home page, menu and various others in a very modern and classy manner.
