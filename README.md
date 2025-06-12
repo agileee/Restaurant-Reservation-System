@@ -13,13 +13,16 @@ The Restaurant Reservation System is a web-based application developed using Nod
 ## How to Run
 
 to create package.json, use this code:
+
 npm init -y
 
 then type this code:
+
 npm install express mysql2 cors body-parser
 
 to run code:
 node server.js
+
 and server.js file should be ther right under root directory
 
 eg:
@@ -34,7 +37,9 @@ project-root/
 Type these code in command line/terminal.
 
 use code:
+
 node server.js 
+
 to set up localhost connection.
 
 ## Future fixes to be made
