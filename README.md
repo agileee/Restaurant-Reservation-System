@@ -23,7 +23,7 @@ npm install express mysql2 cors body-parser
 to run code:
 node server.js
 
-and server.js file should be ther right under root directory
+and server.js file should be there right under root directory
 
 eg:
 
