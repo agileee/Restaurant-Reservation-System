@@ -1,0 +1,266 @@
+    /* General Reset */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        background-color: #fff7e6;
+        color: #333;
+    }
+
+    /* Header and Navigation */
+    header {
+        background-color: #e5b245;
+        color: #f9a825;
+        padding: 15px 0;
+    }
+
+    header nav ul {
+        list-style: none;
+        text-align: center;
+    }
+
+    header nav ul li {
+        display: inline;
+        margin: 0 20px;
+    }
+
+    header nav ul li a {
+        color: #955301;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    header nav ul li a:hover {
+        text-decoration: underline;
+        color: #573900;
+    }
+
+    .logo-image {
+        max-width: 300px;
+        height: 350px;
+        display: inline-block;
+        margin-top: -80px; /* Move image up */
+        margin-bottom: 5px;
+    }
+
+
+    /* Hero Section */
+    .hero {
+        background-color: #e5b245;
+        color: #955301;
+        text-align: center;
+        padding: 120px 20px;
+    }
+
+    .hero h1 {
+        font-size: 4em;
+        margin-bottom: 20px;
+    }
+
+    .hero p {
+        font-size: 1.3em;
+        margin-bottom: 30px;
+    }
+
+    .hero .btn {
+        padding: 15px 25px;
+        background-color: #ae6e07;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 1.2em;
+    }
+
+    .hero .btn:hover {
+        background-color: #623004;
+    }
+
+    /* Award Winning Dishes Section */
+    .award-winning-dishes-container {
+        background-color: #fff7e6;
+        padding: 60px 20px;
+    }
+
+    .award-winning-dishes {
+        max-width: 1200px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    /* Make Award Section Heading Gold */
+    .award-winning-dishes h2 {
+        font-size: 2.5em;
+        color: #955301;
+        margin-bottom: 40px;
+    }
+
+    .dishes {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    .dish {
+        width: 300px;
+    }
+
+    /* Dish Name Headings Gold */
+    .dish h3 {
+        font-size: 1.8em;
+        color: #f9a825;
+        margin: 15px 0 10px;
+    }
+
+    /* Dish Paragraphs Gold */
+    .dish p {
+        color: #8d8c8a;
+        font-size: 1em;
+    }
+
+    /* Circular Dish Images */
+    .dish-image {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Center only the tiramisu dish */
+    .dish.tiramisu {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    /* Accomplishments Section */
+    .accomplishments-container {
+        background-color: #fffde7;
+        padding: 60px 20px;
+    }
+
+    .accomplishments {
+        max-width: 1200px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .accomplishments h2 {
+        font-size: 2.5em;
+        margin-bottom: 30px;
+        color: #955301;
+    }
+
+    .accomplishment-list {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    .accomplishment-item {
+        background-color: #ffffff;
+        padding: 25px;
+        width: 280px;
+        border-radius: 10px;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .accomplishment-item h3 {
+        font-size: 1.8em;
+        margin-bottom: 15px;
+        color: #f9a825;
+    }
+
+    .accomplishment-item p {
+        font-size: 1.1em;
+        color: #707070;
+    }
+
+    /* Head Chef Section */
+    .head-chef {
+        padding: 60px 20px;
+        background-color: #fff7e6;
+        text-align: center;
+    }
+
+    .head-chef h2 {
+        font-size: 2.5em;
+        margin-bottom: 30px;
+        color: #955301;
+    }
+
+    .chef-profile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        flex-wrap: wrap;
+    }
+
+    .chef-image {
+        border-radius: 50%;
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+        border: 5px solid #fff;
+    }
+
+    .chef-info h3 {
+        font-size: 2em;
+        color: #f9a825;
+        margin-top: 20px;
+    }
+
+    .chef-info p {
+        font-size: 1.2em;
+        color: #707070;
+        font-style: italic;
+    }
+
+    /* About Us Section */
+    .about-us {
+        padding: 60px 20px;
+        background-color: #fffde7;
+        text-align: center;
+    }
+
+    .about-us h2 {
+        font-size: 2.5em;
+        margin-bottom: 30px;
+        color: #955301;
+    }
+
+    .about-us-content {
+        max-width: 800px;
+        margin: 0 auto;
+        font-size: 1.2em;
+        color: #707070;
+        line-height: 1.8;
+    }
+
+    .about-us-content p {
+        margin-bottom: 20px;
+    }
+
+    /* Footer */
+    footer {
+        background-color: #e5b245;
+        color: white;
+        text-align: center;
+        padding: 15px 0;
+    }
+
+    .dish-fullwidth {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+

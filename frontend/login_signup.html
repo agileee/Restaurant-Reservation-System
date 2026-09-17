@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login / Signup | Golden Fork</title>
+<link rel="stylesheet" href="css/style.css">
+<style>
+  .reservation-hero {
+    background-color: #e5b245;
+    color: #955301;
+    text-align: center;
+    padding: 180px 20px 80px;
+    position: relative;
+  }
+  .reservation-hero .logo-image {
+    max-width: 300px;
+    height: 350px;
+    margin-top: -120px;
+    margin-bottom: 5px;
+  }
+  .reservation-hero h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+  }
+  .reservation-main {
+    background-color: #fff7e6;
+    padding: 60px 20px;
+  }
+  .reservation-container {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .form-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+  }
+  .section-title {
+    color: #955301;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .form-group {
+    margin-bottom: 25px;
+  }
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #955301;
+    font-weight: bold;
+    font-size: 1.1em;
+  }
+  .form-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #e5b245;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #fffaf0;
+  }
+  .form-group input:focus {
+    outline: none;
+    border-color: #955301;
+    box-shadow: 0 0 0 3px rgba(233, 176, 69, 0.3);
+    background-color: white;
+  }
+  .submit-btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #ae6e07;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 30px;
+  }
+  .submit-btn:hover {
+    background-color: #623004;
+  }
+</style>
+</head>
+<body>
+<header>
+  <nav>
+    <ul>
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="menu.html">MENU</a></li>
+      <li><a href="login_signup.html">LOGIN / SIGN UP</a></li>
+      <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="reservation-hero">
+  <div class="logo">
+    <img src="images/logo.jpg" alt="logo" class="logo-image">
+  </div>
+  <h1>Login / Signup</h1>
+  <p>Access your account to manage your reservations</p>
+</section>
+
+<main class="reservation-main">
+  <div class="reservation-container">
+    <div class="form-card">
+      <h2 class="section-title">Welcome Back</h2>
+      <form id="loginForm">
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+        <button type="submit" class="submit-btn">Login</button>
+      </form>
+
+      <hr style="margin: 40px 0; border: none; border-top: 1px solid #ccc;">
+
+      <h2 class="section-title">New Here?</h2>
+      <form id="signupForm">
+        <div class="form-group">
+          <label for="signup-name">Full Name</label>
+          <input type="text" id="signup-name" name="signup-name" required>
+        </div>
+        <div class="form-group">
+          <label for="signup-email">Email</label>
+          <input type="email" id="signup-email" name="signup-email" required>
+        </div>
+        <div class="form-group">
+          <label for="signup-password">Password</label>
+          <input type="password" id="signup-password" name="signup-password" required>
+        </div>
+        <button type="submit" class="submit-btn">Sign Up</button>
+      </form>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <p>&copy; 2025 Golden Fork Restaurant. All Rights Reserved.</p>
+</footer>
+<script src="js/signup.js"></script>
+</body>
+</html>

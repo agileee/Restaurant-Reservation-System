@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reservations - Golden Fork</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Reservation Hero - Matches index.html hero section */
+        .reservation-hero {
+            background-color: #e5b245;
+            color: #955301;
+            text-align: center;
+            padding: 180px 20px 80px;
+            position: relative;
+        }
+        
+        .reservation-hero .logo {
+            margin-bottom: -50px;
+        }
+        
+        .reservation-hero .logo-image {
+            max-width: 300px;
+            height: 350px;
+            display: inline-block;
+            margin-top: -120px;
+            margin-bottom: 5px;
+        }
+        
+        .reservation-hero h1 {
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            color: #955301;
+        }
+        
+        .reservation-hero p {
+            font-size: 1.3em;
+            max-width: 700px;
+            margin: 0 auto 30px;
+            color: #955301;
+        }
+        
+        /* Main Content Container - Matches index.html sections */
+        .reservation-main {
+            background-color: #fff7e6;
+            padding: 60px 20px;
+        }
+        
+        .reservation-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+        
+        .reservation-form-section {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .hours-section {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        /* Cards - Matching accomplishment section style */
+        .form-card, .hours-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        /* Section Titles - Matching index.html headings */
+        .section-title {
+            color: #955301;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .section-title::after {
+            content: "";
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 3px;
+            background-color: #f9a825;
+        }
+        
+        /* Form Elements - Consistent with brand colors */
+        .form-group {
+            margin-bottom: 25px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #955301;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        
+        .form-group input, 
+        .form-group select, 
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #e5b245;
+            border-radius: 5px;
+            font-size: 1em;
+            background-color: #fffaf0;
+            transition: all 0.3s;
+        }
+        
+        .form-group input:focus, 
+        .form-group select:focus, 
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #955301;
+            box-shadow: 0 0 0 3px rgba(233, 176, 69, 0.3);
+            background-color: white;
+        }
+        
+        .form-group textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+        
+        /* Button - Matches index.html button style */
+        .submit-btn {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background-color: #ae6e07;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin-top: 30px;
+        }
+        
+        .submit-btn:hover {
+            background-color: #623004;
+        }
+        
+        /* Hours Section - Matching accomplishment items */
+        .hours-list {
+            margin-top: 30px;
+        }
+        
+        .hour-item {
+            margin-bottom: 25px;
+            padding-bottom: 25px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        
+        .hour-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        
+        .hour-item h3 {
+            color: #f9a825;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+        
+        .hour-item p {
+            color: #707070;
+            font-size: 1.1em;
+        }
+        
+        .holiday-note {
+            font-style: italic;
+            color: #8d8c8a;
+            margin-top: 30px;
+            text-align: center;
+        }
+        
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .reservation-hero {
+                padding: 150px 20px 60px;
+            }
+            
+            .reservation-hero .logo-image {
+                margin-top: -100px;
+                height: 300px;
+            }
+            
+            .reservation-container {
+                flex-direction: column;
+                gap: 30px;
+            }
+            
+            .form-card, .hours-card {
+                padding: 30px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .reservation-hero h1 {
+                font-size: 2.5em;
+            }
+            
+            .reservation-hero p {
+                font-size: 1.1em;
+            }
+            
+            .section-title {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="reservations.html">RESERVATIONS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="reservation-hero">
+        <div class="logo">
+            <img src="images/logo.jpg" alt="logo" class="logo-image">
+        </div>
+        <h1>Reservation Details</h1>
+        <p>Book your table online for an exceptional dining experience</p>
+    </section>
+
+    <main class="reservation-main">
+        <div class="reservation-container">
+            <section class="reservation-form-section">
+                <div class="form-card">
+                    <h2 class="section-title">Make a Reservation</h2>
+                    <form id="reservationForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="date">Date</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="time">Time</label>
+                            <input type="time" id="time" name="time" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="guests">Number of Guests</label>
+                            <select id="guests" name="guests" required>
+                                <option value="">Select...</option>
+                                <option value="1">1 Person</option>
+                                <option value="2">2 People</option>
+                                <option value="3">3 People</option>
+                                <option value="4">4 People</option>
+                                <option value="5">5 People</option>
+                                <option value="6">6 People</option>
+                                <option value="7">7 People</option>
+                                <option value="8">8 People</option>
+                                <option value="9">9+ People</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="special-requests">Special Requests</label>
+                            <textarea id="special-requests" name="special-requests"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Book Table</button>
+                    </form>
+                </div>
+            </section>
+            
+            <section class="hours-section">
+                <div class="hours-card">
+                    <h2 class="section-title">Our Hours</h2>
+                    <div class="hours-list">
+                        <div class="hour-item">
+                            <h3>Monday - Thursday</h3>
+                            <p>11:00 AM - 10:00 PM</p>
+                        </div>
+                        <div class="hour-item">
+                            <h3>Friday - Saturday</h3>
+                            <p>11:00 AM - 11:00 PM</p>
+                        </div>
+                        <div class="hour-item">
+                            <h3>Sunday</h3>
+                            <p>10:00 AM - 9:00 PM</p>
+                        </div>
+                    </div>
+                    <p class="holiday-note">* Holiday hours may vary. Please call for special holiday reservations.</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Golden Fork Restaurant. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
