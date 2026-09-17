@@ -21,6 +21,12 @@
     .menu-item-info { padding: 20px; text-align: center; }
     .menu-item-info h3 { font-size: 1.8em; color: #f9a825; margin-bottom: 10px; }
     .menu-item-info p { font-size: 1em; color: #707070; }
+    .menu-item-price { display: block; margin-top: 12px; color: #955301; font-size: 1.1em; font-weight: bold; }
+    @media (max-width: 640px) {
+        .menu-hero { padding-top: 130px; }
+        .menu-hero h1 { font-size: 2.5em; }
+        .menu-item { width: min(100%, 340px); }
+    }
     footer { background-color: #e5b245; color: white; text-align: center; padding: 15px 0; }
 </style>
 </head>
@@ -51,27 +57,30 @@
         <div class="menu-section">
             <h2>Starters</h2>
             <div class="menu-items">
-                <div class="menu-item">
+                <article class="menu-item">
                     <img src="images/bruschetta.jpg" alt="Bruschetta">
                     <div class="menu-item-info">
                         <h3>Bruschetta</h3>
                         <p>Grilled bread with garlic, fresh tomatoes, basil, and olive oil.</p>
+                        <span class="menu-item-price">$8</span>
                     </div>
-                </div>
-                <div class="menu-item">
+                </article>
+                <article class="menu-item">
                     <img src="images/salad.jpg" alt="Garden Salad">
                     <div class="menu-item-info">
                         <h3>Garden Salad</h3>
                         <p>Fresh greens with seasonal vegetables and a light vinaigrette.</p>
+                        <span class="menu-item-price">$9</span>
                     </div>
-                </div>
-                <div class="menu-item">
+                </article>
+                <article class="menu-item">
                     <img src="images/soup.jpg" alt="Soup of the Day">
                     <div class="menu-item-info">
                         <h3>Soup of the Day</h3>
                         <p>Warm and comforting, prepared fresh daily with seasonal ingredients.</p>
+                        <span class="menu-item-price">$7</span>
                     </div>
-                </div>
+                </article>
             </div>
         </div>
 
@@ -79,27 +88,30 @@
         <div class="menu-section">
             <h2>Main Courses</h2>
             <div class="menu-items">
-                <div class="menu-item">
+                <article class="menu-item">
                     <img src="images/beef-wellington.jpg" alt="Beef Wellington">
                     <div class="menu-item-info">
                         <h3>Beef Wellington</h3>
                         <p>Beef fillet wrapped in puff pastry with mushroom duxelles.</p>
+                        <span class="menu-item-price">$28</span>
                     </div>
-                </div>
-                <div class="menu-item">
+                </article>
+                <article class="menu-item">
                     <img src="images/pasta.jpg" alt="Homemade Pasta">
                     <div class="menu-item-info">
                         <h3>Homemade Pasta</h3>
                         <p>Fresh pasta with your choice of sauce: Marinara, Alfredo, or Pesto.</p>
+                        <span class="menu-item-price">$18</span>
                     </div>
-                </div>
-                <div class="menu-item">
+                </article>
+                <article class="menu-item">
                     <img src="images/grilled-salmon.jpg" alt="Grilled Salmon">
                     <div class="menu-item-info">
                         <h3>Grilled Salmon</h3>
                         <p>Perfectly grilled salmon fillet served with seasonal vegetables.</p>
+                        <span class="menu-item-price">$24</span>
                     </div>
-                </div>
+                </article>
             </div>
         </div>
 
@@ -107,27 +119,30 @@
         <div class="menu-section">
             <h2>Desserts</h2>
             <div class="menu-items">
-                <div class="menu-item">
+                <article class="menu-item">
                     <img src="images/tiramisu.jpg" alt="Tiramisu">
                     <div class="menu-item-info">
                         <h3>Tiramisu</h3>
                         <p>Classic Italian dessert with coffee-soaked ladyfingers and mascarpone.</p>
+                        <span class="menu-item-price">$10</span>
                     </div>
-                </div>
-                <div class="menu-item">
+                </article>
+                <article class="menu-item">
                     <img src="images/cheesecake.jpg" alt="Cheesecake">
                     <div class="menu-item-info">
                         <h3>New York Cheesecake</h3>
                         <p>Rich and creamy cheesecake served with fresh berries.</p>
+                        <span class="menu-item-price">$9</span>
                     </div>
-                </div>
-                <div class="menu-item">
+                </article>
+                <article class="menu-item">
                     <img src="images/chocolate-mousse.jpg" alt="Chocolate Mousse">
                     <div class="menu-item-info">
                         <h3>Chocolate Mousse</h3>
                         <p>Velvety chocolate mousse with a hint of espresso and whipped cream.</p>
+                        <span class="menu-item-price">$9</span>
                     </div>
-                </div>
+                </article>
             </div>
         </div>
 
@@ -135,27 +150,30 @@
         <div class="menu-section">
             <h2>Beverages</h2>
             <div class="menu-items">
-                <div class="menu-item">
+                <article class="menu-item">
                     <img src="images/iced-latte.jpg" alt="Iced Latte">
                     <div class="menu-item-info">
                         <h3>Iced Latte</h3>
                         <p>Freshly brewed iced latte with your choice of milk or cream.</p>
+                        <span class="menu-item-price">$6</span>
                     </div>
-                </div>
-                <div class="menu-item">
+                </article>
+                <article class="menu-item">
                     <img src="images/wine.jpg" alt="Wine">
                     <div class="menu-item-info">
                         <h3>Fine Wine Selection</h3>
                         <p>Curated selection of red and white wines from around the world.</p>
+                        <span class="menu-item-price">$12</span>
                     </div>
-                </div>
-                <div class="menu-item">
+                </article>
+                <article class="menu-item">
                     <img src="images/juice.jpg" alt="Fresh Juices">
                     <div class="menu-item-info">
                         <h3>Fresh Juices</h3>
                         <p>Seasonal fresh juices with natural flavors to refresh and energize.</p>
+                        <span class="menu-item-price">$5</span>
                     </div>
-                </div>
+                </article>
             </div>
         </div>
 
